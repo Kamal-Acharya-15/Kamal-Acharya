@@ -1,58 +1,168 @@
-/* Reset & Base */
-* {margin: 0; padding: 0; box-sizing: border-box;}
-body {font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333;}
-
-/* Navigation */
-nav {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 15px 50px; background: #005bbb; color: white;
-  position: sticky; top: 0; z-index: 100;
-}
-nav .logo {font-weight: bold; font-size: 1.5em;}
-nav ul {display: flex; list-style: none;}
-nav ul li {margin-left: 25px;}
-nav ul li a {color: white; text-decoration: none; font-weight: 500;}
-nav ul li a:hover {text-decoration: underline;}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #005bbb, #00aaff);
-  color: white; text-align: center; padding: 100px 20px;
-}
-.hero h1 {font-size: 3em; margin-bottom: 15px;}
-.hero p {font-size: 1.2em; margin-bottom: 30px;}
-.btn {
-  background: #ff6600; color: white; padding: 12px 25px; border-radius: 5px;
-  text-decoration: none; font-weight: bold;
-}
-.btn:hover {background: #ff4500;}
-
-/* Sections */
-.section {padding: 60px 20px; text-align: center;}
-.section h2 {color: #005bbb; margin-bottom: 20px;}
-ul {list-style: none; padding: 0;}
-ul li {margin: 10px 0;}
-
-/* Projects */
-.projects-container {display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;}
-.project-card {
-  background: #f5f5f5; padding: 20px; border-radius: 10px; width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.project-card:hover {
-  transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Links */
-a {color: #005bbb;}
-a:hover {text-decoration: underline;}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #005bbb;
+}
+
+header p {
+  font-size: 1.3em;
+  color: #555;
+}
+
+/* Table of Contents */
+.toc {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.toc h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.toc ul li {
+  margin: 12px 0;
+}
+
+.toc ul li a {
+  text-decoration: none;
+  color: #005bbb;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.toc ul li a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+/* Content Section */
+.content-section {
+  margin-bottom: 50px;
+}
+
+.content-section h2 {
+  font-size: 2.2em;
+  color: #005bbb;
+  margin-bottom: 10px;
+}
+
+.content-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.content-section ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.content-section ul li {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.content-section ul li strong {
+  color: #005bbb;
+}
+
+.content-section a {
+  color: #005bbb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-section a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
 
 /* Footer */
-footer {background: #222; color: white; padding: 25px; text-align: center;}
+footer {
+  background-color: #222;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 60px;
+}
 
-/* Responsive */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  nav {flex-direction: column;}
-  nav ul {flex-direction: column; margin-top: 10px;}
-  .projects-container {flex-direction: column; gap: 20px;}
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .toc {
+    padding: 10px;
+  }
+
+  .content-section h2 {
+    font-size: 1.8em;
+  }
+
+  .content-section p {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 1em;
+  }
 }
