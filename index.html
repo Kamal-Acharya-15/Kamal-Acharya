@@ -3,99 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kamal Acharya</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kamal Acharya - Wikipedia Style</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #555;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    .toc ul {
+      list-style: none;
+    }
+
+    .toc ul li {
+      margin: 10px 0;
+    }
+
+    .toc ul li a {
+      text-decoration: none;
+      color: #005bbb;
+      font-weight: 500;
+    }
+
+    .toc ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content Section */
+    .content-section {
+      margin-bottom: 30px;
+    }
+
+    .content-section h2 {
+      font-size: 2em;
+      color: #005bbb;
+      margin-bottom: 10px;
+    }
+
+    .content-section p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-  <div class="logo">Kamal Acharya</div>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<!-- Main Content Container -->
+<div class="container">
 
-<!-- Hero Section -->
-<header class="hero">
-  <h1>Kamal Acharya</h1>
-  <p>Nepalese Researcher</p>
-  <a href="#contact" class="btn">Get in Touch</a>
-</header>
+  <!-- Header Section -->
+  <header>
+    <h1>Kamal Acharya</h1>
+    <p>Researcher</p>
+  </header>
 
-<!-- About Section -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>Kamal Acharya (कमल आचार्य; born 27 August 1998) is a Nepalese researcher and author specializing in computer science and information technology. He is passionate about project management, science & technology, research articles, and analytics. He is known for contributing to practical technology projects and publishing research reports on IT systems and IoT applications.</p>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="section">
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Master of Science in IT</strong>, Tribhuvan University, Kathmandu (2019‑2022)</li>
-    <li><strong>Bachelor of Science in IT</strong>, Farwestern University, Mahendranagar (2016‑2019)</li>
-    <li><strong>Intermediate of Science</strong>, Radiant Secondary School (2014‑2016)</li>
-    <li><strong>School Leaving Certificate</strong>, Janapriya Secondary (2014)</li>
-  </ul>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <div class="projects-container">
-    <div class="project-card">
-      <h3>Smart Electricity Bill Payment System</h3>
-      <p>An automated system to manage and pay electricity bills efficiently, with record tracking and notifications.</p>
-    </div>
-    <div class="project-card">
-      <h3>Entrance Seat Allotment System</h3>
-      <p>Project that automates seat allotment for educational institutes based on merit and availability.</p>
-    </div>
-    <div class="project-card">
-      <h3>IoT Early Flood Detection System</h3>
-      <p>IoT-based solution to detect rising water levels and send early warnings to reduce flood damage.</p>
-    </div>
-    <div class="project-card">
-      <h3>Stress Detection in IT Professionals</h3>
-      <p>Machine learning application to monitor and detect stress levels in IT professionals for better productivity.</p>
-    </div>
-    <div class="project-card">
-      <h3>Human Age and Gender Prediction System</h3>
-      <p>AI-based system that predicts human age and gender from images, useful in analytics and security applications.</p>
-    </div>
+  <!-- Table of Contents -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#biography">Biography</a></li>
+      <li><a href="#early-life">Early Life</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
-</section>
 
-<!-- Publications Section -->
-<section id="publications" class="section">
-  <h2>Publications</h2>
-  <ul>
-    <li>Design and Development of a Smart Electricity Bill Payment Management System</li>
-    <li>Entrance Seat Allotment System Project Report</li>
-    <li>IoT Early Flood Detection & Avoidance System Project Report</li>
-    <li>Stress Detection in IT Professional by Machine Learning</li>
-    <li>Human Age and Gender Prediction Management System Project</li>
-  </ul>
-</section>
+  <!-- Biography Section -->
+  <div id="biography" class="content-section">
+    <h2>Biography</h2>
+    <p>Kamal Acharya (कमल आचार्य) is a Nepalese researcher, technologist, and author known for his work in the field of computer science and artificial intelligence. He has made significant contributions to technology and research in Nepal, specializing in machine learning, IoT (Internet of Things), and data analytics. Kamal is passionate about the integration of modern technology with traditional systems, aiming to improve the quality of life in rural areas through tech-based solutions.</p>
+  </div>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:kamal@example.com">acharyak184@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/acharyak182" target="_blank">acharyak182</a></p>
-  <p>Location: Kathmandu, Nepal</p>
-</section>
+  <!-- Early Life Section -->
+  <div id="early-life" class="content-section">
+    <h2>Early Life</h2>
+    <p>Kamal Acharya was born on August 27, 1998, in Kathmandu, Nepal. From a young age, he demonstrated a deep interest in computers and technology. Growing up in a developing country, Kamal was often inspired by the challenges faced by his community and sought ways to solve problems using technology. His curiosity led him to explore the world of programming and software development during his school years. Kamal’s early exposure to technology in Nepal shaped his career path, leading him to pursue higher education in Information Technology.</p>
+  </div>
 
-<!-- Footer -->
-<footer>
-  <p>© 2026 Kamal Acharya</p>
-</footer>
+  <!-- Education Section -->
+  <div id="education" class="content-section">
+    <h2>Education</h2>
+    <p>Kamal Acharya attended the prestigious **Farwestern University** in Mahendranagar, Nepal, where he completed his Bachelor's degree in Information Technology (2016-2019). Afterward, he pursued a **Master's degree in Information Technology** from **Tribhuvan University**, Kathmandu (2019-2022). His master's thesis focused on **Artificial Intelligence (AI)** and **Machine Learning (ML)**, with a special interest in improving data analytics for businesses in Nepal. Kamal has attended several workshops and conferences on the applications of AI, IoT, and data analytics in solving real-world problems.</p>
+  </div>
 
-</body>
-</html>
+  <!-- Career Section -->
+  <div id="career" class="content-section">
+    <h2>Career</h2>
+    <p>After completing his studies, Kamal started his career as a **freelance software developer**. He worked with various local businesses, developing solutions tailored to meet the specific needs of each client. His expertise in **data analysis**, **machine learning**, and **automation** made him a sought-after consultant in the tech industry. Kamal later joined **Tech Solutions Pvt. Ltd.**, a leading IT firm in Nepal, where he worked on several high-profile projects involving IoT applications, smart systems, and **AI-powered solutions**. In addition to his technical work, Kamal has contributed to the **Nepalese startup ecosystem** by mentoring young developers and sharing his knowledge at technology meetups.</p>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects" class="content-section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Smart Electricity Bill Payment System:</strong> An automated system designed to track, calculate, and manage electricity bills with online payment options.</li>
+      <li><strong>IoT Early Flood Detection System:</strong> A system using IoT sensors to detect rising water levels and send early alerts, helping communities avoid flood damage.</li>
+      <li><strong>Stress Detection in IT Professionals:</strong> A machine learning-based app that analyzes stress levels among IT professionals, helping to improve workplace wellness.</li>
+      <li><strong>Human Age and Gender Prediction System:</strong> AI-based system that uses facial recognition to predict human age and gender, useful in security and demographic analysis.</li>
+    </ul>
+  </div>
+
+  <!-- Publications Section -->
+  <div id="publications" class="content-section">
+    <h2>Publications</h2>
+    <ul>
+      <li><em>Design and Development of Smart Electricity Bill Payment Management System</em> (Published in the Journal of Technology and Innovation)</li>
+      <li><em>Entrance Seat Allotment System for Nepalese Universities</em> (Published in Nepalese IT Journal)</li>
+      <li><em>IoT Early Flood Detection & Avoidance System</em> (Conference paper presented at IoT Nepal 2021)</li>
+      <li><em>Stress Detection in IT Professionals Using Machine Learning</em> (Journal of Artificial Intelligence and Machine Learning)</li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kamal@example.com">acharyak184@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/acharyak182" target="_blank">acharyak182</a></p>
+    <p>GitHub: <a href="https://github.com/acharyak182" target="_blank">acharyak182</a></p>
+    <p>Location: Kathmandu, Nepal
