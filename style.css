@@ -139,6 +139,7 @@ li {
     }
 
     .infobox {
-        order: -1;
+    float: right;
+    margin: 0 0 10px 20px;
     }
 }
