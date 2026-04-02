@@ -41,7 +41,7 @@ body {
 .center-img {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     border-radius: 10px; /* optional rounded corners */
 }
