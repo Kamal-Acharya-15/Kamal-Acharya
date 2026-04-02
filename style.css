@@ -2,50 +2,79 @@
 body {
     font-family: "Georgia", "Times New Roman", serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+    color: #000;
+    background-color: #fff;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f1f1f1;
-    border-bottom: 2px solid #ccc;
+    margin: 20px 0;
 }
 
 header h1 {
     font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+/* Content layout */
+.content-wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    gap: 20px;
+}
+
+/* Infobox (right side) */
+.infobox {
+    flex: 0 0 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #aaa;
+    padding: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.infobox-image {
+    width: 100%;
+    border: 1px solid #aaa;
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+.infobox th {
+    text-align: left;
+    padding: 3px;
+    vertical-align: top;
+    width: 40%;
+}
+
+.infobox td {
+    padding: 3px;
+}
+
+/* Main content */
+main {
+    flex: 1;
 }
 
 /* Table of Contents */
 #toc {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 15px 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 #toc h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
 
 #toc ol {
@@ -53,8 +82,8 @@ header p {
 }
 
 #toc a {
-    color: #0645ad;
     text-decoration: none;
+    color: #0645ad;
 }
 
 #toc a:hover {
@@ -63,20 +92,22 @@ header p {
 
 /* Sections */
 section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-left: 4px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 section h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 2px;
 }
 
-/* Links */
+/* Lists and links */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
 a {
     color: #0645ad;
     text-decoration: none;
@@ -89,21 +120,17 @@ a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-top: 2px solid #ccc;
-    margin-top: 40px;
+    margin: 40px 0;
+    font-size: 0.9em;
+    color: #555;
 }
 
-/* Responsive for mobile */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+/* Responsive */
+@media(max-width: 900px){
+    .content-wrapper {
+        flex-direction: column;
     }
-    section {
-        padding: 15px;
-    }
-    #toc {
-        padding: 10px 15px;
+    .infobox {
+        width: 100%;
     }
 }
