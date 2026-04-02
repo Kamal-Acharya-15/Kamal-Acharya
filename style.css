@@ -8,11 +8,11 @@ body {
 
 /* Layout */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;   /* slightly smaller */
     margin: 20px auto;
     display: flex;
+    align-items: flex-start; /* prevents stretching */
     gap: 20px;
-    padding: 0 10px;
 }
 
 /* Main Content */
