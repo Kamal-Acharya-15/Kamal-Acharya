@@ -1,1 +1,157 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #eef2f3, #dfe9f3);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
+nav {
+    background: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 10px 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: #38bdf8;
+    color: #000;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* SECTION STYLE */
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* IMAGE */
+.center-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+    object-fit: cover;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #1e3c72;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    text-decoration: underline;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin: 15px;
+        padding: 15px;
+    }
+}
