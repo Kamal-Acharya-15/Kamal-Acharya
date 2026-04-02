@@ -27,37 +27,47 @@ body {
     padding: 20px;
     border: 1px solid #a2a9b1;
 }
-
-/* Infobox */
+/* Infobox (Fixed Wikipedia Style) */
 .infobox {
-    flex: 1;
+    width: 300px;              /* fixed width like Wikipedia */
+    flex: none;               /* prevent stretching */
     background: #f8f9fa;
     border: 1px solid #a2a9b1;
     font-size: 14px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
+/* Image */
 .infobox img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-.infobox h2 {
-    text-align: center;
-    margin: 10px 0;
-}
-
+/* Table */
 .infobox table {
     width: 100%;
     border-collapse: collapse;
 }
 
 .infobox td {
-    padding: 6px;
-    border-bottom: 1px solid #ddd;
+    padding: 6px 8px;
+    border-top: 1px solid #ddd;
+    vertical-align: top;
+    font-size: 13px;
 }
 
 .infobox td:first-child {
     font-weight: bold;
+    width: 40%;
+}
+
+/* Title */
+.infobox h2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
 }
 
 /* TOC */
