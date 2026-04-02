@@ -1,1 +1,109 @@
+/* General body styling */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* Table of Contents */
+#toc {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#toc h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#toc ol {
+    padding-left: 20px;
+}
+
+#toc a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 4px solid #ccc;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 2px solid #ccc;
+    margin-top: 40px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    section {
+        padding: 15px;
+    }
+    #toc {
+        padding: 10px 15px;
+    }
+}
