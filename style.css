@@ -1,145 +1,134 @@
-/* Base */
-body {
-    font-family: "Linux Libertine", Georgia, serif;
-    background-color: #f8f9fa;
+/* General Reset */
+* {
     margin: 0;
-    color: #202122;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Layout */
-.container {
-    max-width: 1000px;   /* slightly smaller */
-    margin: 20px auto;
-    display: flex;
-    align-items: flex-start; /* prevents stretching */
-    gap: 20px;
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
 }
 
-/* Main Content */
-.content {
-    flex: 3;
-    background: #ffffff;
-    padding: 20px;
-    border: 1px solid #a2a9b1;
-    border-radius: 2px;
+/* Header Section */
+header {
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px solid #ddd;
 }
 
-/* Headings */
-h1 {
-    font-size: 28px;
-    font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
+header h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Main Sections */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
-    font-size: 20px;
-    font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
-    margin-top: 25px;
-    padding-bottom: 3px;
+    font-size: 1.8em;
+    color: #1c3d5a;
+    border-bottom: 2px solid #1cc88a;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
 }
 
-/* Paragraph */
+h3 {
+    font-size: 1.3em;
+    color: #2a2a2a;
+    margin: 15px 0 10px;
+}
+
 p {
-    font-size: 15px;
-    line-height: 1.7;
-    text-align: justify;
-}
-
-/* Links */
-a {
-    color: #0645ad;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    margin-bottom: 15px;
+    font-size: 1em;
 }
 
 /* Lists */
 ul {
+    list-style-type: disc;
     padding-left: 20px;
+    margin-bottom: 15px;
 }
 
 li {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
-/* Table of Contents */
+/* Links */
+a {
+    color: #1cc88a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #17a673;
+}
+
+/* DOI links */
+.doi a {
+    font-size: 0.9em;
+    color: #4e73df;
+}
+
+/* Responsive Table of Contents / Sidebar (Optional) */
 .toc {
-    border: 1px solid #a2a9b1;
-    background: #f8f9fa;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 20px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    max-width: 220px;
 }
 
 .toc h3 {
-    margin-top: 0;
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
-.toc ul {
-    list-style-type: none;
-    padding-left: 10px;
-}
-
-.toc li {
-    margin: 5px 0;
-}
-
-/* Infobox */
-.infobox {
-    flex: 1;
-    background: #f8f9fa;
-    border: 1px solid #a2a9b1;
-    font-size: 14px;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.infobox img {
-    width: 100%;
+.toc a {
     display: block;
+    margin-bottom: 5px;
 }
 
-.infobox h2 {
+/* Footer */
+footer {
     text-align: center;
-    font-size: 18px;
-    margin: 10px 0;
+    padding: 20px;
+    background-color: #1c3d5a;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 4px solid #1cc88a;
 }
 
-.infobox table {
-    width: 40%;
-    border-collapse: collapse;
-}
-
-.infobox td {
-    padding: 8px;
-    border-top: 1px solid #ddd;
-    vertical-align: top;
-}
-
-.infobox td:first-child {
-    font-weight: bold;
-    width: 40%;
-    color: #202122;
-}
-
-/* Hover effect for rows */
-.infobox tr:hover {
-    background-color: #eef3ff;
-}
-
-/* Responsive (Mobile) */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    section {
+        padding: 20px;
+        margin: 20px 15px;
     }
 
-    .infobox {
-    float: right;
-    margin: 0 0 10px 20px;
+    .toc {
+        display: none; /* Hide TOC on small screens */
     }
 }
