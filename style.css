@@ -1,30 +1,31 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-/* Quick Facts Card */
+/* Quick Facts Container */
 .quick-facts {
-    background: linear-gradient(135deg, #1abc9c, #16a085); /* Gradient background */
-    color: white;
-    border-radius: 15px;
-    padding: 25px 30px;
+    max-width: 650px;
     margin: 30px auto;
-    max-width: 600px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    border-radius: 20px;
+    color: white;
+    padding: 25px 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .quick-facts:hover {
     transform: translateY(-5px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .quick-facts h2 {
     text-align: center;
     font-size: 1.8em;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 
+/* Quick Facts List */
 .quick-facts ul {
     list-style: none;
     padding: 0;
@@ -33,12 +34,12 @@
 
 .quick-facts li {
     display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 10px 12px;
-    border-radius: 8px;
+    align-items: flex-start;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
     background: rgba(255, 255, 255, 0.1);
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .quick-facts li:hover {
@@ -46,19 +47,16 @@
     transform: translateX(5px);
 }
 
+/* Icons */
 .quick-facts li i {
     font-size: 1.2em;
     width: 30px;
-    min-width: 30px;
     margin-right: 15px;
     color: #ecf0f1;
     text-align: center;
 }
 
-.quick-facts strong {
-    font-weight: 600;
-}
-
+/* Nested lists */
 .quick-facts ul ul {
     margin-top: 5px;
     margin-left: 45px;
@@ -66,6 +64,12 @@
     padding-left: 15px;
 }
 
+/* Bold labels */
+.quick-facts strong {
+    font-weight: 600;
+}
+
+/* Responsive for mobile */
 @media screen and (max-width: 650px) {
     .quick-facts {
         padding: 20px;
