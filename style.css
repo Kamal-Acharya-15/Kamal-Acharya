@@ -1,86 +1,83 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-/* Quick Facts Container */
-.quick-facts {
-    max-width: 650px;
-    margin: 30px auto;
-    background: linear-gradient(135deg, #1abc9c, #16a085);
-    border-radius: 20px;
-    color: white;
-    padding: 25px 30px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+/* Wikipedia-style Info Box */
+.wiki-infobox {
+    width: 300px;
+    border: 1px solid #a2a9b1;
+    border-radius: 8px;
+    background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #202122;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px auto;
 }
 
-.quick-facts:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-}
-
-.quick-facts h2 {
+.infobox-header {
+    background-color: #dce3ea;
+    padding: 15px;
     text-align: center;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    border-bottom: 1px solid #a2a9b1;
 }
 
-/* Quick Facts List */
-.quick-facts ul {
-    list-style: none;
-    padding: 0;
+.infobox-header h2 {
     margin: 0;
+    font-size: 1.3em;
 }
 
-.quick-facts li {
-    display: flex;
-    align-items: flex-start;
-    padding: 12px 15px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1);
-    transition: background 0.3s, transform 0.2s;
+.infobox-header p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    color: #555;
 }
 
-.quick-facts li:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(5px);
+.infobox-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 6px;
 }
 
-/* Icons */
-.quick-facts li i {
-    font-size: 1.2em;
-    width: 30px;
-    margin-right: 15px;
-    color: #ecf0f1;
+.wiki-infobox table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 15px 0;
+}
+
+.wiki-infobox th, .wiki-infobox td {
+    text-align: left;
+    padding: 8px 10px;
+    border-top: 1px solid #c7c9cc;
+    vertical-align: top;
+}
+
+.wiki-infobox th {
+    width: 40%;
+    font-weight: bold;
+    background-color: #f1f3f5;
+}
+
+.infobox-footer {
     text-align: center;
+    padding: 10px;
+    font-size: 0.85em;
+    border-top: 1px solid #a2a9b1;
+    background-color: #e9ecef;
 }
 
-/* Nested lists */
-.quick-facts ul ul {
-    margin-top: 5px;
-    margin-left: 45px;
-    border-left: 2px solid rgba(255,255,255,0.3);
-    padding-left: 15px;
+.infobox-footer a {
+    color: #1a0dab;
+    text-decoration: none;
 }
 
-/* Bold labels */
-.quick-facts strong {
-    font-weight: 600;
+.infobox-footer a:hover {
+    text-decoration: underline;
 }
 
-/* Responsive for mobile */
-@media screen and (max-width: 650px) {
-    .quick-facts {
-        padding: 20px;
-        margin: 20px 15px;
-    }
-    .quick-facts li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .quick-facts li i {
-        margin-bottom: 5px;
+@media screen and (max-width: 400px) {
+    .wiki-infobox {
+        width: 90%;
     }
 }
 * {
